@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(255, 0, 153);
+            color: white;
+            font: normal 14pt Tahoma;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado!</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS.</p>
+    
+    <p>TÉCNICAS:</p>
+    <!-- TAG NOME -->
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]; //guardando o primeiro parágrafo em uma variável
+        document.write('EXEMPLO COM A TAG NOME: ' + p1.innerText); //mostrando a variável 
+
+        //p1.style.color = 'black'; //alterando a cor da letra por DOM
+        //var corpo = window.document.body;
+        //corpo.style.background = 'pink'; // alterando o fundo por DOM
+    </script>
+    
+    <!-- ID -->
+    <div id="msg">EXEMPLO COM A TAG ID!</div> 
+    <script>
+        var d = document.getElementById('msg');
+        d.style.background = 'black';
+        d.style.color = 'white';
+        //d.innerText = 'Testando...' //alternado o texto por DOM
+        
+        //PODEMOS ALTERAR A VARIÁVEL POR: 
+        //window.document.getElementById('msg').innerText = 'Clique em mim 2!';
+    </script>
+    
+    <!-- QUERY SELECTOR -->
+    <div id ='msg2'>EXEMPLO COM QUERY SELECTOR!</div>
+    <script>
+        var d = document.querySelector('div#msg2');
+        d.style.background = 'white';
+        d.style.color = 'black';
+    </script>
+
+    <!-- CLASS -->
+    <div class ='msg2'>EXEMPLO COM CLASS!</div>
+    <script>
+        var d = document.querySelector('div.msg2'); //IGUAL ID SÓ QUE MUDA PARA . AO INVÉS DE #
+        d.style.background = 'black';
+        d.style.color = 'white';
+    </script>
+
+</body>
+</html>

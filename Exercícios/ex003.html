@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa!</title>
+    <style>
+        body {
+            background-color: rgb(255, 0, 157);
+            color: white; /*Comentário em CSS*/
+            font: normal 20pt Tahoma;
+        }
+        h1 {
+            color:rgb(140, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- Comentário em HTML -->
+    <p>Curso de JS - Gustavo Guanabara</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')); 
+        //Retorna um String
+        var n2 = Number(window.prompt('Digite outro número: ')); 
+        //Retorna um String
+
+        /*Fazendo conversão de tipo:
+        String -> Number
+        Number.parseInt(n) -> Para números inteiros
+        Number.parseFloat(n) -> Para números quebrados com . 
+        Number(n) -> Para o JS decidir se é inteiro ou quebrado*/
+
+        var s = n1 + n2;
+        window.alert(`A soma entre os números '${n1}' e '${n2}' é = ${s}`); //Neste caso não é neessário converter o número para String, mas é só para mostrar
+    </script>
+</body>
+</html>
