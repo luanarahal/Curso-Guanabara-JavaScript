@@ -1,4 +1,4 @@
-var c = 1
+var c = 2
 
 while (c <= 6) {
     console.log('Oi!')
