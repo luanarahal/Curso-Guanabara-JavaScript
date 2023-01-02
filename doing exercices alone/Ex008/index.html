@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vários cálculos em JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+
+    <button onclick="calcular()">Clique para calcular!</button>
+
+    <section id="resultado">Aqui irá aparecer o resultado!</section>
+
+    <script>
+        function calcular() {
+            let num = window.prompt('Digite um número!')
+            let res = document.getElementById('resultado')
+            let abs = Math.abs(num)
+            let partint = Math.trunc(num)
+            let arrend = Math.round(num)
+            let raizqua = Math.sqrt(num)
+            let raizcub = Math.cbrt(num)
+            let exp2 = Math.pow(num, 2)
+            let exp3 = Math.pow(num, 3)
+
+            res.innerHTML = `<p>O número digitado foi ${num}.</p><hr>`
+            res.innerHTML += `<p>O valor absoluto é ${abs}.</p>`
+            res.innerHTML += `<p>A parte inteira é ${partint}.</p>`
+            res.innerHTML += `<p>O arredondamento é ${arrend}.</p>`
+            res.innerHTML += `<p>A sua raiz quadrada é ${raizqua}.</p>`
+            res.innerHTML += `<p>A sua raiz cúbica é ${raizcub}.</p>`
+            res.innerHTML += `<p>O valor de ${num}² é ${exp2}.</p>`
+            res.innerHTML += `<p>O valor de ${num}³ é ${exp3}.</p>`
+        }
+    </script>
+</body>
+</html>
