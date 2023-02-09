@@ -1,0 +1,10 @@
+body {
+    font: normal 15pt Tahoma;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+button {
+    font: normal 15pt Tahoma;
+    padding: 30px;
+}

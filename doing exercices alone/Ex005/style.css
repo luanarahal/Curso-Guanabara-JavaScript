@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(247, 60, 147);
+    font: normal 15pt Tahoma;
+    text-align: center;
+}
+h1 {
+    font-style: italic;
+}
+button {
+    padding: 30px;
+    font: normal 20pt Tahoma;
+}

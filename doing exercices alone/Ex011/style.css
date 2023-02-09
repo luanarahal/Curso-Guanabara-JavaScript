@@ -1,0 +1,11 @@
+body {
+    font: normal 15pt Tahoma;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+button {
+    padding: 30px;
+    font: normal 15pt Tahoma;
+    background-color: beige;
+}

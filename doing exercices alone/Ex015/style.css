@@ -1,0 +1,11 @@
+body {
+    font: normal 15pt Tahoma;
+    background-color: rgb(255, 92, 203);
+    text-align: center;
+}
+
+button {
+    font: normal 15pt Tahoma;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
